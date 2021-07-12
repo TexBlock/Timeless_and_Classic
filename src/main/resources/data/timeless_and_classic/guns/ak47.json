@@ -14,7 +14,7 @@
   "projectile": {
     "item": "timeless_and_classic:bullet_308",
     "visible": false,
-    "damage": 7.5,
+    "damage": 8.5,
     "size": 0.2,
     "speed": 14.5,
     "life": 160

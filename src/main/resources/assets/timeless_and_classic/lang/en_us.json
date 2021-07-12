@@ -27,6 +27,8 @@
   "item.timeless_and_classic.9mm_round": "9mm Bullet",
   "item.timeless_and_classic.ar_15_p": "AR-15 P",
   "item.timeless_and_classic.ar_15_hellmouth": ".308 Hellmouth",
+  "item.timeless_and_classic.micro_uzi": "Micro Uzi",
+  "item.timeless_and_classic.vector45": "Vector 45",
 
   "item.timeless_and_classic.timeless_workbench": "Rustic Workbench",
 
@@ -48,6 +50,25 @@
 
   "itemGroup.timeless_and_classic": "Timeless and Classics!",
   "itemGroup.timeless_and_modern": "Timeless and Modern!",
+
+  "subtitle.timeless_and_classic.fire_1911fire": "45 Pistol Fire",
+  "subtitle.timeless_and_classic.fire_1911fires": "45 Pistol Fire Silenced",
+  "subtitle.timeless_and_classic.fire_mosin-nagantfire": "Mosin Fire",
+  "subtitle.timeless_and_classic.fire_30-30fire": "30-30 Fire",
+  "subtitle.timeless_and_classic.fire_ak74fire": "AK-74 Fire",
+  "subtitle.timeless_and_classic.fire_ak74fires": "AK-74 Fire Silenced",
+  "subtitle.timeless_and_classic.fire_ak47fire": "AK-47 Fire",
+  "subtitle.timeless_and_classic.fire_ak47fires": "AK-47 Fire Silenced",
+  "subtitle.timeless_and_classic.fire_dp28fire": "DP-28 Fire",
+  "subtitle.timeless_and_classic.fire_glockfire": "Glock Fire",
+  "subtitle.timeless_and_classic.fire_glockfires": "Glock Fire Silenced",
+  "subtitle.timeless_and_classic.fire_m16fire": "AR Fire",
+  "subtitle.timeless_and_classic.fire_m16fires": "AR Fire Silenced",
+  "subtitle.timeless_and_classic.fire_m60fire": "M60 Fire",
+  "subtitle.timeless_and_classic.fire_m92fsfires": "M9 Fire Silenced",
+  "subtitle.timeless_and_classic.fire_m92fsfire": "M9 Fire",
+  "subtitle.timeless_and_classic.fire_m1851fire": "M1851 Fire Silenced",
+  "subtitle.timeless_and_classic.fire_tompsonfire": "Tompson Fire Silenced",
 
   "info.timeless_and_classic.auto": "This weapon is automatic!"
 }

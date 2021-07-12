@@ -1,108 +1,108 @@
 {
   "item.fire_m1911": {
-    "subtitle": "subtitle.fire_1911fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_1911fire",
     "sounds": [
       { "name": "timeless_and_classic:item/1911_fire" }
     ]
   },
   "item.fire_m1911s": {
-    "subtitle": "subtitle.fire_1911fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_1911fires",
     "sounds": [
       { "name": "timeless_and_classic:item/1911supressed_fire" }
     ]
   },
   "item.fire_mosin-nagant": {
-    "subtitle": "subtitle.fire_mosin-nagantfire",
+    "subtitle": "subtitle.timeless_and_classic.fire_mosin-nagantfire",
     "sounds": [
       { "name": "timeless_and_classic:item/mosin-nagant_fire" }
     ]
   },
   "item.fire_30-30": {
-    "subtitle": "subtitle.fire_30-30fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_30-30fire",
     "sounds": [
       { "name": "timeless_and_classic:item/30-30_fire" }
     ]
   },
   "item.fire_ak74": {
-    "subtitle": "subtitle.fire_ak74fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_ak74fire",
     "sounds": [
       { "name": "timeless_and_classic:item/ak74_fire" }
     ]
   },
   "item.fire_ak74s": {
-    "subtitle": "subtitle.fire_ak74fires",
+    "subtitle": "subtitle.timeless_and_classic.fire_ak74fires",
     "sounds": [
       { "name": "timeless_and_classic:item/ak74_fire_supressed" }
     ]
   },
   "item.fire_ak47": {
-    "subtitle": "subtitle.fire_ak47fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_ak47fire",
     "sounds": [
       { "name": "timeless_and_classic:item/ak_fire_47" }
     ]
   },
   "item.fire_ak47s": {
-    "subtitle": "subtitle.fire_ak47fires",
+    "subtitle": "subtitle.timeless_and_classic.fire_ak47fires",
     "sounds": [
       { "name": "timeless_and_classic:item/ak_fire_supressed_47" }
     ]
   },
   "item.fire_dp28": {
-    "subtitle": "subtitle.fire_dp28fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_dp28fire",
     "sounds": [
       { "name": "timeless_and_classic:item/dp28_fire" }
     ]
   },
   "item.fire_glock": {
-    "subtitle": "subtitle.fire_glockfire",
+    "subtitle": "subtitle.timeless_and_classic.fire_glockfire",
     "sounds": [
       { "name": "timeless_and_classic:item/glock_fire" }
     ]
   },
   "item.fire_glocks": {
-    "subtitle": "subtitle.fire_glockfires",
+    "subtitle": "subtitle.timeless_and_classic.fire_glockfires",
     "sounds": [
       { "name": "timeless_and_classic:item/glock_suppressed_fire" }
     ]
   },
   "item.fire_m16": {
-    "subtitle": "subtitle.fire_m16fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_m16fire",
     "sounds": [
       { "name": "timeless_and_classic:item/m16_fire" }
     ]
   },
   "item.fire_m16s": {
-    "subtitle": "subtitle.fire_m16fires",
+    "subtitle": "subtitle.timeless_and_classic.fire_m16fires",
     "sounds": [
       { "name": "timeless_and_classic:item/m16_fire_suppressed" }
     ]
   },
   "item.fire_m60": {
-    "subtitle": "subtitle.fire_m60fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_m60fire",
     "sounds": [
       { "name": "timeless_and_classic:item/m60_fire_opt1" }
     ]
   },
   "item.fire_m92fs": {
-    "subtitle": "subtitle.fire_m92fsfire",
+    "subtitle": "subtitle.timeless_and_classic.fire_m92fsfire",
     "sounds": [
       { "name": "timeless_and_classic:item/m92fs_fire" }
     ]
   },
   "item.fire_m92fss": {
-    "subtitle": "subtitle.fire_m92fsfires",
+    "subtitle": "subtitle.timeless_and_classic.fire_m92fsfires",
     "sounds": [
       { "name": "timeless_and_classic:item/m92fs_fire_suppressed" }
     ]
   },
   "item.fire_m1851": {
-    "subtitle": "subtitle.fire_m1851fire",
+    "subtitle": "subtitle.timeless_and_classic.fire_m1851fire",
     "sounds": [
       { "name": "timeless_and_classic:item/m1851_fire" }
     ]
   },
   "item.fire_thompson": {
-    "subtitle": "subtitle.fire_thompsonfire",
+    "subtitle": "subtitle.timeless_and_classic.fire_thompsonfire",
     "sounds": [
       { "name": "timeless_and_classic:item/thompson_fire" }
     ]

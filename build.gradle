@@ -69,16 +69,25 @@ minecraft {
 
 repositories {
     maven { url = "https://www.cursemaven.com" }
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.1.0'
     compile fg.deobf('curse.maven:obfuscate-289380:3169370')
     compile fg.deobf('curse.maven:controllable-317269:3196545')
     compile fg.deobf('curse.maven:mrcrayfishs-gun-mod-289479:3203497')
     compile fg.deobf('curse.maven:configured-457570:3244520')
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.41')
 }
 
+repositories {
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+}
+
+dependencies {
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.41')
+}
 jar {
     manifest {
         attributes([

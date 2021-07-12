@@ -5,19 +5,19 @@
     "gripType": "timeless_and_classic:two_handed_ak47",
     "maxAmmo": 30,
     "reloadAmount": 5,
-    "recoilAngle": 2.085,
-    "recoilKick": 1.015,
-    "recoilAdsReduction": 0.28,
+    "recoilAngle": 3.185,
+    "recoilKick": 1.215,
+    "recoilAdsReduction": 0.35,
     "alwaysSpread": true,
-    "spread": 4.35
+    "spread": 3.75
   },
   "projectile": {
     "item": "timeless_and_classic:nato_556_bullet",
     "visible": false,
-    "damage": 6.0,
+    "damage": 6.5,
     "size": 0.2,
-    "speed": 30.5,
-    "life": 125
+    "speed": 36.5,
+    "life": 85
   },
   "sounds": {
     "fire": "timeless_and_classic:item.fire_m16",
@@ -35,7 +35,7 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.60,
-      "yOffset": 12.80,
+      "yOffset": 12.70,
       "zOffset": -4.2
     },
     "attachments": {

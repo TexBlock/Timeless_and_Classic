@@ -336,6 +336,50 @@ public class ItemRegistry {
             EnchantmentHelper.setEnchantments(x, stack);
         }
     });
+    public static final RegistryObject<TimelessGunItem> VECTOR45 = ITEM_REGISTRY.register("vector45", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+
+        @Override
+        public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
+        {
+            Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
+            if(Config.COMMON.VECTOR45_trigMax.get() == 0)
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+            }
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.VECTOR45_trigMax.get().intValue());
+            }
+            EnchantmentHelper.setEnchantments(x, stack);
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> MICRO_UZI = ITEM_REGISTRY.register("micro_uzi", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+
+        @Override
+        public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
+        {
+            Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
+            if(Config.COMMON.VECTOR45_trigMax.get() == 0)
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+            }
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.VECTOR45_trigMax.get().intValue());
+            }
+            EnchantmentHelper.setEnchantments(x, stack);
+        }
+    });
     // Here I also create some new Ammunition for my mod! Not a necessary piece as you can continue using the original "cgm:" ammo!
     public static final RegistryObject<AmmoItem> MAGNUM_BULLET = ITEM_REGISTRY.register("magnumround", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
     public static final RegistryObject<AmmoItem> BULLET_45 = ITEM_REGISTRY.register("round45", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));

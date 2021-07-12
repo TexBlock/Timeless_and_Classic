@@ -1,0 +1,12 @@
+{
+  "type": "timeless_and_classic:timeless_workbench",
+  "result": {
+    "item": "timeless_and_classic:micro_uzi"
+  },
+  "materials": [
+    {
+      "item": "minecraft:iron_ingot",
+      "count": 28
+    }
+  ]
+}

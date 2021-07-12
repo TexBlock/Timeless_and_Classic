@@ -1,0 +1,54 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 1,
+    "gripType": "timeless_and_classic:one_handed_m1911",
+    "maxAmmo": 25,
+    "reloadAmount": 5,
+    "recoilAngle": 6.985,
+    "recoilKick": 1.385,
+    "recoilAdsReduction": 0.38,
+    "alwaysSpread": true,
+    "spread": 11.25
+  },
+  "projectile": {
+    "item": "timeless_and_classic:9mm_round",
+    "visible": false,
+    "damage": 3.0,
+    "size": 0.2,
+    "speed": 18.5,
+    "life": 2
+  },
+  "sounds": {
+    "fire": "timeless_and_classic:item.fire_m16",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.pistol.cock",
+    "silencedFire": "timeless_and_classic:item.fire_m16s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 18.15,
+      "zOffset": -7.55,
+      "size": 1.10
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.60,
+      "yOffset": 21.40,
+      "zOffset": -7.75
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+        "scope": {
+          "yOffset": 19.95,
+          "zOffset": 5.8,
+          "scale": 1.850
+        }
+    }
+  }
+}

@@ -84,7 +84,21 @@ public enum SpecialModels {
     AR15_P_MUZZLE("ar_15_p_muzzle"),
     AR15_P_SUPPRESSOR("ar_15_p_suppressor"),
     AR15_P_TACTICAL_GRIP("ar_15_p_tactical_grip"),
-    AR15_BOLT("ar_15_bolt");
+    AR15_BOLT("ar_15_bolt"),
+    VECTOR45_BODY("vector45_body"),
+    VECTOR45_BOLT("vector45_bolt"),
+    VECTOR45_EXTENDED_MAG("vector45_extended_mag"),
+    VECTOR45_GRIP("vector45_grip"),
+    VECTOR45_HEAVY_STOCK("vector45_heavy_stock"),
+    VECTOR45_LIGHT_STOCK("vector45_light_stock"),
+    VECTOR45_SIGHT("vector45_sight"),
+    VECTOR45_SILENCER("vector45_silencer"),
+    VECTOR45_STANDARD_MAG("vector45_standard_mag"),
+    VECTOR45_TACTICAL_STOCK("vector45_tactical_stock"),
+    MICRO_UZI_BODY("micro_uzi_body"),
+    MICRO_UZI_BOLT("micro_uzi_bolt"),
+    MICRO_UZI_SIGHT("micro_uzi_sight"),
+    MICRO_UZI_SILENCER("micro_uzi_silencer");
 
     //Variables
     private final ResourceLocation modelLocation;

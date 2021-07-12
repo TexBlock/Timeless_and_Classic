@@ -35,8 +35,8 @@ public class glock_17_animation implements IOverrideModel {
     @Override
     public void render(float v, ItemCameraTransforms.TransformType transformType, ItemStack stack, ItemStack parent, LivingEntity entity, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay) {
 
-        matrices.translate(0.01, 0.1, -0.1);
-        matrices.rotate(Vector3f.YP.rotationDegrees(-0.5F));
+        //matrices.translate(0.01, 0.1, -0.1);
+        //matrices.rotate(Vector3f.YP.rotationDegrees(-0.5F));
 
         /*
             // So this area will be tested for the item specific name, allowing the use of custom attachments

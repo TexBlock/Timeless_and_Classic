@@ -8,7 +8,7 @@ import timeless_and_classic.common.network.ServerHandler;
 
 import java.util.function.Supplier;
 
-public class UnjamMessage implements IMessage {
+public class FiremodeMessage implements IMessage {
 
     @Override
     public void encode(PacketBuffer buffer) {}
@@ -21,7 +21,7 @@ public class UnjamMessage implements IMessage {
         supplier.get().enqueueWork(() -> {
             ServerPlayerEntity player = supplier.get().getSender();
             if(player != null && !player.isSpectator()) {
-                ServerHandler.handleUnjam(player);
+                ServerHandler.handleFireMode(player) ;
             }
         });
         supplier.get().setPacketHandled(true);

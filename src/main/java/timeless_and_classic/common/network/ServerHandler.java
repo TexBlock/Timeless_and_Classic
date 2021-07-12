@@ -1,6 +1,9 @@
 package timeless_and_classic.common.network;
 
+import com.mrcrayfish.guns.common.Gun;
+import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.IColored;
+import com.mrcrayfish.guns.util.GunModifierHelper;
 import com.mrcrayfish.guns.util.InventoryUtil;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.InventoryHelper;
@@ -35,6 +38,23 @@ public class ServerHandler
             }
         }
     }
+
+    public static void handleFireMode(ServerPlayerEntity player) {
+        ItemStack stack = player.getHeldItemMainhand();
+        //if(stack.getItem() instanceof GunItem) {
+            //if(stack.getTag().getBoolean("auto"))
+            //{
+                stack.getTag().remove("auto");
+                stack.getTag().putBoolean("auto",false);
+        //    }
+        //    else
+        //    {
+                stack.getTag().remove("auto");
+                stack.getTag().putBoolean("auto",true);
+        //    }
+        //}
+    }
+
     public static void handleCraft(ServerPlayerEntity player, ResourceLocation id, BlockPos pos)
     {
         World world = player.world;

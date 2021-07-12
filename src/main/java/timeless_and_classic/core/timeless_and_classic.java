@@ -15,6 +15,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import timeless_and_classic.client.TimelessKeyBinds;
 import timeless_and_classic.client.handlers.HClient;
 import timeless_and_classic.client.render.gun.model.*;
 import timeless_and_classic.client.render.pose.*;
@@ -103,6 +104,7 @@ public class timeless_and_classic {
         GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_mosin"), new TwoHandedPoseHighRes_mosin()));
         GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_ak47"), new TwoHandedPoseHighRes_ak47()));
         GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_m60"), new TwoHandedPoseHighRes_m60()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_vector"), new TwoHandedPoseHighRes_vector()));
 
         HPacket.init();
     }
@@ -124,9 +126,11 @@ public class timeless_and_classic {
         ModelOverrides.register(ItemRegistry.M92FS.get(), new m92fs_animation());
         ModelOverrides.register(ItemRegistry.AR15_HELLMOUTH.get(), new ar15_hellmouth_animation());
         ModelOverrides.register(ItemRegistry.AR15_P.get(), new ar15_p_animation());
+        ModelOverrides.register(ItemRegistry.VECTOR45.get(), new vector45_animation());
+        ModelOverrides.register(ItemRegistry.MICRO_UZI.get(), new micro_uzi_animation());
 
         HClient.setup();
-        KeyBinds.register();
+        TimelessKeyBinds.register();
 
         RenderTypeLookup.setRenderLayer(TimelessBlocks.MAGNUMBOX.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(TimelessBlocks.BOX_45.get(), RenderType.getCutout());

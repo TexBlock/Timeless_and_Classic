@@ -14,7 +14,7 @@
   "projectile": {
     "item": "timeless_and_classic:nato_556_bullet",
     "visible": false,
-    "damage": 6.5,
+    "damage": 7.5,
     "size": 0.2,
     "speed": 28.5,
     "life": 250

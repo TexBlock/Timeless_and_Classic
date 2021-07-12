@@ -32,7 +32,7 @@ public class Config {
         public ForgeConfigSpec.IntValue AK74_trigMax;
         public ForgeConfigSpec.IntValue AR15P_trigMax;
         public ForgeConfigSpec.IntValue AR15HM_trigMax;
-
+        public ForgeConfigSpec.IntValue VECTOR45_trigMax;
         //Constructor for the Common Config
         Common(ForgeConfigSpec.Builder builder) {
 
@@ -59,6 +59,8 @@ public class Config {
                 this.AK74_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("ak74_trigMax", 1, 0, 10);
                 this.AR15HM_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("ar15hm_trigMax", 0, 0, 10);
                 this.AR15P_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("ar15p_trigMax", 0, 0, 10);
+                this.VECTOR45_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("ar15p_trigMax", 0, 0, 10);
+
             }
         }
     }
