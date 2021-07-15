@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench, follow @CraneNeko on Twitter, the creator of this epic/texture!",
+	"credit": "Models are primarially made by NekoCrane and adjusted by ClumsyAlien!",
 	"textures": {
 		"4": "timeless_and_classic:items/m1851_body",
 		"5": "timeless_and_classic:items/m1851_dyed",
@@ -1753,7 +1753,8 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 3, -1.25],
+			"rotation": [22.5, 0, 0],
+			"translation": [0, 3.75, 0.25],
 			"scale": [0.35, 0.35, 0.35]
 		},
 		"thirdperson_lefthand": {
@@ -1785,15 +1786,18 @@
 		{
 			"name": "revovler(parts)",
 			"origin": [10.52894, 0.97266, -2.5],
+			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 		},
 		{
 			"name": "m1851_hammer",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "strike(parts)",
 					"origin": [8, 3.35355, 7.18934],
+					"color": 0,
 					"children": [16, 17, 18, 19, 20, 21]
 				}
 			]
@@ -1801,35 +1805,42 @@
 		{
 			"name": "m1851",
 			"origin": [8, 8, 8],
+			"color": 0,
 			"children": [
 				{
 					"name": "box(body)",
 					"origin": [8, 0.75839, 4.11798],
+					"color": 0,
 					"children": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
 				},
 				{
 					"name": "barrel(body)",
 					"origin": [9.80747, 2.31753, 13.5125],
+					"color": 0,
 					"children": [55, 56, 57, 58, 59, 60, 61, 62, 63, 64]
 				},
 				{
 					"name": "binding(body)",
 					"origin": [0, 0, -0.25],
+					"color": 0,
 					"children": [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97]
 				},
 				{
 					"name": "tube(parts)",
 					"origin": [9.80747, 2.31753, 13.5125],
+					"color": 0,
 					"children": [98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118]
 				},
 				{
 					"name": "trigger(parts)",
 					"origin": [8, 8, 8],
+					"color": 0,
 					"children": [119, 120, 121, 122, 123, 124, 125]
 				},
 				{
 					"name": "handle(dyed)",
 					"origin": [0, 0, 0],
+					"color": 0,
 					"children": [126, 127, 128, 129, 130, 131, 132, 133]
 				}
 			]

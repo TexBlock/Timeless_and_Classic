@@ -29,6 +29,12 @@
   "item.timeless_and_classic.ar_15_hellmouth": ".308 Hellmouth",
   "item.timeless_and_classic.micro_uzi": "Micro Uzi",
   "item.timeless_and_classic.vector45": "Vector 45",
+  "item.timeless_and_classic.walther_ppk": "Walther PPK",
+  "item.timeless_and_classic.mosberg590": "Mosberg 590",
+  "item.timeless_and_classic.db_long": "Double Barrel",
+  "item.timeless_and_classic.db_short": "Sawed off Double Barrel",
+  "item.timeless_and_classic.10_gauge_round": "10 Gauge Round",
+  "item.timeless_and_classic.m4": "M4A1",
 
   "item.timeless_and_classic.timeless_workbench": "Rustic Workbench",
 
@@ -47,6 +53,7 @@
   "block.timeless_and_classic.timeless_workbench": "Rustic Workbench",
   "block.timeless_and_classic.nato_556_box_block": "Box of 5.56 Bullets (x50)",
   "block.timeless_and_classic.9mm_box_block": "Box of 9mm Bullets (x24)",
+  "block.timeless_and_classic.10_gauge_box_block": "Box of 10g Bullets (x12)",
 
   "itemGroup.timeless_and_classic": "Timeless and Classics!",
   "itemGroup.timeless_and_modern": "Timeless and Modern!",
@@ -68,7 +75,8 @@
   "subtitle.timeless_and_classic.fire_m92fsfires": "M9 Fire Silenced",
   "subtitle.timeless_and_classic.fire_m92fsfire": "M9 Fire",
   "subtitle.timeless_and_classic.fire_m1851fire": "M1851 Fire Silenced",
-  "subtitle.timeless_and_classic.fire_tompsonfire": "Tompson Fire Silenced",
+  "subtitle.timeless_and_classic.fire_tompsonfire": "Thompson Fire",
+  "subtitle.timeless_and_classic.fire_dbfire": "Shotgun Fire",
 
   "info.timeless_and_classic.auto": "This weapon is automatic!"
 }

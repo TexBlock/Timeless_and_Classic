@@ -98,7 +98,25 @@ public enum SpecialModels {
     MICRO_UZI_BODY("micro_uzi_body"),
     MICRO_UZI_BOLT("micro_uzi_bolt"),
     MICRO_UZI_SIGHT("micro_uzi_sight"),
-    MICRO_UZI_SILENCER("micro_uzi_silencer");
+    MICRO_UZI_SILENCER("micro_uzi_silencer"),
+    M1911_NETHER("m1911_nether"),
+    M1911_SLIDE_NETHER("m1911_slide_nether"),
+    M1911_STANDARD_MAG_NETHER("m1911_standard_mag_nether"),
+    M1911_LONG_MAG_NETHER("m1911_long_mag_nether"),
+    MOSBERG590_BODY("mosberg590_body"),
+    MOSBERG590_BULLETS("mosberg590_bullets"),
+    MOSBERG590_GRIP("mosberg590_grip"),
+    MOSBERG590_SIGHTS("mosberg590_sights"),
+    MOSBERG590_SLIDE("mosberg590_slide"),
+    WALTHER_PPK_BODY("walther_ppk_body"),
+    WALTHER_PPK_EXTENDED_MAG("walther_ppk_extended_mag"),
+    WALTHER_PPK_SLIDE("walther_ppk_slide"),
+    WALTHER_PPK_STANDARD_MAG("walther_ppk_standard_mag"),
+    M4_BODY("m4_body"),
+    M4_BOLT("m4_bolt"),
+    M4_BOLT_HANDLE("m4_bolt_handle"),
+    M4_SIGHT("m4_sight"),
+    M4_TACTICAL_STOCK("m4_tactical_stock");
 
     //Variables
     private final ResourceLocation modelLocation;

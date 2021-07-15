@@ -380,6 +380,61 @@ public class ItemRegistry {
             EnchantmentHelper.setEnchantments(x, stack);
         }
     });
+    public static final RegistryObject<TimelessGunItem> M4 = ITEM_REGISTRY.register("m4", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+
+        @Override
+        public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
+        {
+            Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
+            if(Config.COMMON.AR15P_trigMax.get() == 0)
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+            }
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            {
+                x.remove(ModEnchantments.TRIGGER_FINGER.get());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AR15P_trigMax.get().intValue());
+            }
+            EnchantmentHelper.setEnchantments(x, stack);
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> M1911_NETHER = ITEM_REGISTRY.register("m1911_nether", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+        public int getItemEnchantability() {
+            return 12;
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> MOSBERG590 = ITEM_REGISTRY.register("mosberg590", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> DB_SHORT = ITEM_REGISTRY.register("db_short", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> DB_LONG = ITEM_REGISTRY.register("db_long", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> WALTHER_PPK = ITEM_REGISTRY.register("walther_ppk", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+    });
     // Here I also create some new Ammunition for my mod! Not a necessary piece as you can continue using the original "cgm:" ammo!
     public static final RegistryObject<AmmoItem> MAGNUM_BULLET = ITEM_REGISTRY.register("magnumround", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
     public static final RegistryObject<AmmoItem> BULLET_45 = ITEM_REGISTRY.register("round45", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
@@ -387,5 +442,6 @@ public class ItemRegistry {
     public static final RegistryObject<AmmoItem> BULLET_308 = ITEM_REGISTRY.register("bullet_308", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
     public static final RegistryObject<AmmoItem> BULLET_556 = ITEM_REGISTRY.register("nato_556_bullet", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
     public static final RegistryObject<AmmoItem> BULLET_9 = ITEM_REGISTRY.register("9mm_round", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
+    public static final RegistryObject<AmmoItem> BULLET_10g = ITEM_REGISTRY.register("10_gauge_round", () -> new AmmoItem(new Item.Properties().maxStackSize(64).group(timeless_and_classic.AMMO_GROUP)));
 
 }

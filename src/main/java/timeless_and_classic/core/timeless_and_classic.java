@@ -128,6 +128,10 @@ public class timeless_and_classic {
         ModelOverrides.register(ItemRegistry.AR15_P.get(), new ar15_p_animation());
         ModelOverrides.register(ItemRegistry.VECTOR45.get(), new vector45_animation());
         ModelOverrides.register(ItemRegistry.MICRO_UZI.get(), new micro_uzi_animation());
+        ModelOverrides.register(ItemRegistry.M1911_NETHER.get(), new m1911_nether_animation());
+        ModelOverrides.register(ItemRegistry.MOSBERG590.get(), new mosberg590_animation());
+        ModelOverrides.register(ItemRegistry.WALTHER_PPK.get(), new walther_ppk_animation());
+        ModelOverrides.register(ItemRegistry.M4.get(), new m4_animation());
 
         HClient.setup();
         TimelessKeyBinds.register();
@@ -138,6 +142,7 @@ public class timeless_and_classic {
         RenderTypeLookup.setRenderLayer(TimelessBlocks.BOX_308.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(TimelessBlocks.BOX_556.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(TimelessBlocks.BOX_9.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(TimelessBlocks.BOX_10g.get(), RenderType.getCutout());
     }
 
 

@@ -1,46 +1,46 @@
 {
   "general": {
-    "rate": 5,
+    "rate": 3,
     "gripType": "timeless_and_classic:one_handed_m1911",
-    "maxAmmo": 8,
-    "reloadAmount": 2,
-    "recoilAngle": 7.0,
-    "recoilKick": 2.55,
+    "maxAmmo": 9,
+    "reloadAmount": 3,
+    "recoilAngle": 2.35,
+    "recoilKick": 3.15,
     "recoilAdsReduction": 0.45,
     "alwaysSpread": true,
-    "spread": 2.5
+    "spread": 3.8
   },
   "projectile": {
-    "item": "timeless_and_classic:round45",
+    "item": "timeless_and_classic:9mm_round",
     "visible": false,
-    "damage": 9.5,
+    "damage": 4.5,
     "size": 0.2,
-    "speed": 20.0,
-    "life": 250
+    "speed": 29.0,
+    "life": 2
   },
   "sounds": {
-    "fire": "timeless_and_classic:item.fire_m1911",
+    "fire": "timeless_and_classic:item.fire_m92fs",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.pistol.cock",
-    "silencedFire": "timeless_and_classic:item.fire_m1911s"
+    "silencedFire": "timeless_and_classic:item.fire_m92fss"
   },
   "display": {
     "flash": {
-      "yOffset": 9.88,
-      "zOffset": -11.02,
+      "yOffset": 10.36,
+      "zOffset": -6.84,
       "size": 1.1
     }
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 11.1,
+      "yOffset": 11.72,
       "zOffset": -12.6
     },
     "attachments": {
       "barrel": {
-        "yOffset": 9.88,
-        "zOffset": -11.02,
+        "yOffset": 10.36,
+        "zOffset": -6.84,
         "scale": 0.83
       }
     }

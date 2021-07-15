@@ -2034,7 +2034,8 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, -2.25, 0.5],
+			"rotation": [22.5, 0, 0],
+			"translation": [0, -1.75, -0.5],
 			"scale": [0.35, 0.35, 0.35]
 		},
 		"thirdperson_lefthand": {
@@ -2046,7 +2047,8 @@
 			"scale": [0.98, 0.98, 0.98]
 		},
 		"ground": {
-			"translation": [0, 5, 0]
+			"translation": [0, -0.75, 0],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
 			"rotation": [30, -145, 0],

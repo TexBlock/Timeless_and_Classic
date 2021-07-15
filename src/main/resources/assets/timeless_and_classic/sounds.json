@@ -106,5 +106,11 @@
     "sounds": [
       { "name": "timeless_and_classic:item/thompson_fire" }
     ]
+  },
+  "item.fire_db": {
+    "subtitle": "subtitle.timeless_and_classic.fire_dbfire",
+    "sounds": [
+      { "name": "timeless_and_classic:item/db_fire" }
+    ]
   }
 }

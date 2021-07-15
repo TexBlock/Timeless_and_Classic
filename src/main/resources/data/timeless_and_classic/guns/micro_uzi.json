@@ -5,25 +5,25 @@
     "gripType": "timeless_and_classic:one_handed_m1911",
     "maxAmmo": 25,
     "reloadAmount": 5,
-    "recoilAngle": 6.985,
-    "recoilKick": 1.385,
-    "recoilAdsReduction": 0.38,
+    "recoilAngle": 1.565,
+    "recoilKick": 0.385,
+    "recoilAdsReduction": 0.48,
     "alwaysSpread": true,
-    "spread": 11.25
+    "spread": 7.25
   },
   "projectile": {
     "item": "timeless_and_classic:9mm_round",
     "visible": false,
-    "damage": 3.0,
+    "damage": 2.25,
     "size": 0.2,
-    "speed": 18.5,
-    "life": 2
+    "speed": 16.5,
+    "life": 3
   },
   "sounds": {
-    "fire": "timeless_and_classic:item.fire_m16",
+    "fire": "timeless_and_classic:item.fire_glock",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.pistol.cock",
-    "silencedFire": "timeless_and_classic:item.fire_m16s"
+    "silencedFire": "timeless_and_classic:item.fire_glocks"
   },
   "display": {
     "flash": {

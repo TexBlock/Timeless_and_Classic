@@ -35,6 +35,7 @@ public class SoundRegistry {
     public static final RegistryObject<SoundEvent> M92FS_FIREs = register("item.fire_m92fss");
     public static final RegistryObject<SoundEvent> M1851_FIRE = register("item.fire_m1851");
     public static final RegistryObject<SoundEvent> THOMPSON_FIRE = register("item.fire_thompson");
+    public static final RegistryObject<SoundEvent> DB_FIRE = register("item.fire_db");
 
     private static RegistryObject<SoundEvent> register(String key) {
         return SOUND_REGISTRY.register(key, () -> new SoundEvent(new ResourceLocation(timeless_and_classic.ID, key)));

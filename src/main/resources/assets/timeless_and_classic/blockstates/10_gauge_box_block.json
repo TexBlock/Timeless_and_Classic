@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "timeless_and_classic:block/10_gauge_box_block"
+		},
+		"facing=east": {
+			"model": "timeless_and_classic:block/10_gauge_box_block",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "timeless_and_classic:block/10_gauge_box_block",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "timeless_and_classic:block/10_gauge_box_block",
+			"y": 270
+		}
+	}
+}
