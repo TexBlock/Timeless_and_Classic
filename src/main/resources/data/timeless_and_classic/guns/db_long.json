@@ -14,7 +14,7 @@
   "projectile": {
     "item": "timeless_and_classic:10_gauge_round",
     "visible": false,
-    "damage": 21,
+    "damage": 24,
     "size": 1.0,
     "speed": 27.5,
     "life": 2
@@ -27,8 +27,8 @@
   },
   "display": {
     "flash": {
-      "yOffset": 3.35,
-      "zOffset": -18.55,
+      "yOffset": 5.75,
+      "zOffset": -23.55,
       "size": 1.70
     }
   },

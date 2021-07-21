@@ -1,12 +1,16 @@
 {
   "type": "timeless_and_classic:timeless_workbench",
   "result": {
-    "item": "timeless_and_classic:m16a1"
+    "item": "timeless_and_classic:db_long"
   },
   "materials": [
     {
       "item": "minecraft:iron_ingot",
-      "count": 38
+      "count": 28
+    },
+    {
+      "item": "minecraft:oak_log",
+      "count": 4
     }
   ]
 }

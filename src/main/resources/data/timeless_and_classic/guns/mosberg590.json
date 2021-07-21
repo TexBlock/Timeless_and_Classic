@@ -1,20 +1,20 @@
 {
   "general": {
-    "rate": 18,
+    "rate": 22,
     "gripType": "timeless_and_classic:two_handed_ak47",
     "maxAmmo": 6,
     "reloadAmount": 1,
-    "recoilAngle": 9.385,
+    "recoilAngle": 9.785,
     "recoilKick": 1.255,
-    "recoilAdsReduction": 0.28,
+    "recoilAdsReduction": 0.12,
     "alwaysSpread": true,
-    "spread": 13.25,
+    "spread": 17.25,
     "projectileAmount": 9
   },
   "projectile": {
     "item": "timeless_and_classic:10_gauge_round",
     "visible": false,
-    "damage": 24.5,
+    "damage": 21,
     "size": 1.0,
     "speed": 20.5,
     "life": 3
@@ -39,11 +39,6 @@
       "zOffset": -9.2
     },
     "attachments": {
-      "barrel": {
-        "yOffset": -100829.84,
-        "zOffset": -11.55,
-        "scale": 1.00
-      },
         "scope": {
           "yOffset": 8.45,
           "zOffset": 10.4,

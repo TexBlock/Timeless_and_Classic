@@ -5,8 +5,8 @@
     "gripType": "timeless_and_classic:two_handed_ak47",
     "maxAmmo": 30,
     "reloadAmount": 5,
-    "recoilAngle": 4.745,
-    "recoilKick": 1.115,
+    "recoilAngle": 3.945,
+    "recoilKick": 0.815,
     "recoilAdsReduction": 0.20,
     "alwaysSpread": true,
     "spread": 7.35
@@ -36,7 +36,7 @@
     "zoom": {
       "fovModifier": 0.60,
       "yOffset": 11.90,
-      "zOffset": -4.2
+      "zOffset": -1.2
     },
     "attachments": {
         "scope": {

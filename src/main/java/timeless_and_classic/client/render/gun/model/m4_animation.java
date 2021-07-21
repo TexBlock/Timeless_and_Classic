@@ -41,7 +41,9 @@ public class m4_animation implements IOverrideModel {
         }
         if(Gun.getAttachment(IAttachment.Type.STOCK, stack).getItem() == ModItems.WEIGHTED_STOCK.orElse(ItemStack.EMPTY.getItem()))
         {
+            matrices.translate(0, 0, -0.085f);
             RenderUtil.renderModel(SpecialModels.AR15_HELLMOUTH_BUTT_HEAVY.getModel(), stack, matrices, renderBuffer, light, overlay);
+            matrices.translate(0, 0, 0.085f);
         }
         if(Gun.getAttachment(IAttachment.Type.UNDER_BARREL, stack).getItem() == ModItems.SPECIALISED_GRIP.orElse(ItemStack.EMPTY.getItem()))
         {

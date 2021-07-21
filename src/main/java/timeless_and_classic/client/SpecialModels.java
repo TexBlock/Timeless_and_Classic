@@ -116,7 +116,10 @@ public enum SpecialModels {
     M4_BOLT("m4_bolt"),
     M4_BOLT_HANDLE("m4_bolt_handle"),
     M4_SIGHT("m4_sight"),
-    M4_TACTICAL_STOCK("m4_tactical_stock");
+    M4_TACTICAL_STOCK("m4_tactical_stock"),
+    M24_BODY("m24_body"),
+    M24_BOLT("m24_bolt"),
+    M24_RAIL("m24_rail");
 
     //Variables
     private final ResourceLocation modelLocation;

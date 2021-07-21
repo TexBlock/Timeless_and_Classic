@@ -368,7 +368,7 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.VECTOR45_trigMax.get() == 0)
+            if(Config.COMMON.MICROUZI_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
@@ -390,7 +390,7 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.AR15P_trigMax.get() == 0)
+            if(Config.COMMON.M4_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
@@ -411,25 +411,31 @@ public class ItemRegistry {
             return 12;
         }
     });
-    public static final RegistryObject<TimelessGunItem> MOSBERG590 = ITEM_REGISTRY.register("mosberg590", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    public static final RegistryObject<TimelessGunItem> MOSBERG590 = ITEM_REGISTRY.register("mosberg590", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
     {
         public boolean hasEffect(ItemStack stack) {
             return false;
         }
     });
-    public static final RegistryObject<TimelessGunItem> DB_SHORT = ITEM_REGISTRY.register("db_short", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    public static final RegistryObject<TimelessGunItem> DB_SHORT = ITEM_REGISTRY.register("db_short", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP))
     {
         public boolean hasEffect(ItemStack stack) {
             return false;
         }
     });
-    public static final RegistryObject<TimelessGunItem> DB_LONG = ITEM_REGISTRY.register("db_long", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    public static final RegistryObject<TimelessGunItem> DB_LONG = ITEM_REGISTRY.register("db_long", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP))
     {
         public boolean hasEffect(ItemStack stack) {
             return false;
         }
     });
-    public static final RegistryObject<TimelessGunItem> WALTHER_PPK = ITEM_REGISTRY.register("walther_ppk", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.GROUP).isImmuneToFire())
+    public static final RegistryObject<TimelessGunItem> WALTHER_PPK = ITEM_REGISTRY.register("walther_ppk", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
+    {
+        public boolean hasEffect(ItemStack stack) {
+            return false;
+        }
+    });
+    public static final RegistryObject<TimelessGunItem> M24 = ITEM_REGISTRY.register("m24", () -> new TimelessGunItem(new Item.Properties().maxStackSize(1).group(timeless_and_classic.MODERN_GROUP))
     {
         public boolean hasEffect(ItemStack stack) {
             return false;

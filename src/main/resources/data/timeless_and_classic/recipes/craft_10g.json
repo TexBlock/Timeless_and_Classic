@@ -1,0 +1,17 @@
+{
+  "type": "timeless_and_classic:timeless_workbench",
+  "result": {
+    "item": "timeless_and_classic:10_gauge_round",
+    "count": 4
+  },
+  "materials": [
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 14
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "count": 1
+    }
+  ]
+}

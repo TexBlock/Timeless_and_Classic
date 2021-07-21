@@ -1,23 +1,23 @@
 {
   "general": {
-    "rate": 48,
+    "rate": 56,
     "gripType": "timeless_and_classic:two_handed_mosin",
     "maxAmmo": 5,
     "reloadAmount": 1,
-    "recoilAngle": 18.0,
-    "recoilKick": 1.5,
+    "recoilAngle": 15.5,
+    "recoilKick": 1.35,
     "recoilAdsReduction": 0.75,
     "alwaysSpread": true,
-    "spread": 0.2
+    "spread": 0.15
   },
   "projectile": {
     "item": "timeless_and_classic:win_30-30",
     "visible": false,
     "gravity": true,
-    "damage": 20,
+    "damage": 24,
     "size": 0.2,
-    "speed": 80.0,
-    "life": 700
+    "speed": 110.0,
+    "life": 4
   },
   "sounds": {
     "fire": "timeless_and_classic:item.fire_mosin-nagant",
@@ -34,14 +34,14 @@
   },
   "modules": {
     "zoom": {
-      "fovModifier": 0.55,
-      "yOffset": 10.1,
+      "fovModifier": 0.65,
+      "yOffset": 7.20,
       "zOffset": -6.4
     },
     "attachments": {
       "scope": {
-        "yOffset": 9.8,
-        "zOffset": 3.0,
+        "yOffset": 6.95,
+        "zOffset": 6.0,
         "scale": 1.25
       }
     }

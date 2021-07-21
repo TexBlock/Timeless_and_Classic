@@ -132,6 +132,7 @@ public class timeless_and_classic {
         ModelOverrides.register(ItemRegistry.MOSBERG590.get(), new mosberg590_animation());
         ModelOverrides.register(ItemRegistry.WALTHER_PPK.get(), new walther_ppk_animation());
         ModelOverrides.register(ItemRegistry.M4.get(), new m4_animation());
+        ModelOverrides.register(ItemRegistry.M24.get(), new m24_animation());
 
         HClient.setup();
         TimelessKeyBinds.register();
