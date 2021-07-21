@@ -1,27 +1,18 @@
-package timeless_and_classic.core.types;
+package timeless_and_classic.items;
 
 import com.mrcrayfish.guns.common.Gun;
-import com.mrcrayfish.guns.common.NetworkGunManager;
 
-import com.mrcrayfish.guns.enchantment.EnchantmentTypes;
 import com.mrcrayfish.guns.item.GunItem;
-import com.mrcrayfish.guns.item.IColored;
 import com.mrcrayfish.guns.util.GunEnchantmentHelper;
 import com.mrcrayfish.guns.util.GunModifierHelper;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
-import java.util.WeakHashMap;
 import javax.annotation.Nullable;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item.Properties;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.KeybindTextComponent;
 import net.minecraft.util.text.TextFormatting;
@@ -29,12 +20,18 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistries;
 import timeless_and_classic.core.Config;
-import timeless_and_classic.core.timeless_and_classic;
+import timeless_and_classic.util.Process;
+
+import static timeless_and_classic.core.timeless_and_classic.GROUP;
 
 public class TimelessGunItem extends GunItem {
-    public TimelessGunItem(Properties properties)
+    public TimelessGunItem(Process<Properties> properties)
     {
-        super(properties);
+        super(properties.process(new Properties().maxStackSize(1).group(GROUP)));
+    }
+    
+    public TimelessGunItem() {
+        this(properties -> properties);
     }
 
     @Override
@@ -97,5 +94,10 @@ public class TimelessGunItem extends GunItem {
         }
         else
             return false;
+    }
+    
+    @Override
+    public boolean hasEffect(ItemStack stack) {
+        return false;
     }
 }

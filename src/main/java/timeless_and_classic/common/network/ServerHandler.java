@@ -1,9 +1,6 @@
 package timeless_and_classic.common.network;
 
-import com.mrcrayfish.guns.common.Gun;
-import com.mrcrayfish.guns.item.GunItem;
 import com.mrcrayfish.guns.item.IColored;
-import com.mrcrayfish.guns.util.GunModifierHelper;
 import com.mrcrayfish.guns.util.InventoryUtil;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.InventoryHelper;
@@ -18,7 +15,7 @@ import timeless_and_classic.client.handlers.TimelessWorkbenchRecipes;
 import timeless_and_classic.client.render.tileentity.TimelessWorkbenchTileEntity;
 import timeless_and_classic.client.TimelessWorkbenchContainer;
 import timeless_and_classic.core.registry.SoundRegistry;
-import timeless_and_classic.core.types.TimelessGunItem;
+import timeless_and_classic.items.TimelessGunItem;
 
 import java.util.List;
 
