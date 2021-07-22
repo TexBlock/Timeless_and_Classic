@@ -17,13 +17,13 @@ import java.util.Map;
  * Author: MrCrayfish
  */
 public class CustomGripType extends GripType {
-    public static final CustomGripType ONE_HANDED_M1911 = new CustomGripType(new ResourceLocation("timelessandclassic", "one_handed_m1911"), new OneHandedPoseHighRes_m1911());
-    public static final CustomGripType ONE_HANDED_M1851 = new CustomGripType(new ResourceLocation("timelessandclassic", "one_handed_m1851"), new OneHandedPoseHighRes_m1851());
-    public static final CustomGripType TWO_HANDED_M1894 = new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_hr_m1894"), new TwoHandedPoseHighRes_m1894());
-    public static final CustomGripType TWO_HANDED_M1928 = new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_hr_m1928"), new TwoHandedPoseHighRes_m1928());
-    public static final CustomGripType TWO_HANDED_MOSIN = new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_hr_mosin"), new TwoHandedPoseHighRes_m1928());
-    public static final CustomGripType TWO_HANDED_AK47 = new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_hr_ak47"), new TwoHandedPoseHighRes_ak47());
-    public static final CustomGripType TWO_HANDED_M60 = new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_hr_m60"), new TwoHandedPoseHighRes_m60());
+    public static final CustomGripType ONE_HANDED_M1911 = new CustomGripType(new ResourceLocation("timeless_and_classic", "one_handed_m1911"), new OneHandedPoseHighRes_m1911());
+    public static final CustomGripType ONE_HANDED_M1851 = new CustomGripType(new ResourceLocation("timeless_and_classic", "one_handed_m1851"), new OneHandedPoseHighRes_m1851());
+    public static final CustomGripType TWO_HANDED_M1894 = new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_hr_m1894"), new TwoHandedPoseHighRes_m1894());
+    public static final CustomGripType TWO_HANDED_M1928 = new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_hr_m1928"), new TwoHandedPoseHighRes_m1928());
+    public static final CustomGripType TWO_HANDED_MOSIN = new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_hr_mosin"), new TwoHandedPoseHighRes_m1928());
+    public static final CustomGripType TWO_HANDED_AK47 = new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_hr_ak47"), new TwoHandedPoseHighRes_ak47());
+    public static final CustomGripType TWO_HANDED_M60 = new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_hr_m60"), new TwoHandedPoseHighRes_m60());
 
     public static boolean applyBackTransforms(PlayerEntity player, MatrixStack matrixStack) {
         if (player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == Items.ELYTRA) {

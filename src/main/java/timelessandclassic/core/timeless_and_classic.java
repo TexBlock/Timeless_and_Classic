@@ -29,7 +29,7 @@ import timelessandclassic.core.registry.*;
 @Mod(timeless_and_classic.ID)
 public class timeless_and_classic {
     //This variable is our mods ID - this must be coherent across the project
-    public static final String ID = "timelessandclassic";
+    public static final String ID = "timeless_and_classic";
 
     /*
      * This is our creative tab that we will add our items to.
@@ -96,14 +96,14 @@ public class timeless_and_classic {
 
     void commonSetup(FMLCommonSetupEvent event) {
         // ProjectileManager.getInstance().registerFactory(ItemRegistry.DART.get(), ((world, livingEntity, itemStack, gunItem, gun) -> new DartEntity(EntityRegistry.DART.get(), world, livingEntity, itemStack, gunItem, gun)));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "one_handed_m1911"), new OneHandedPoseHighRes_m1911()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "one_handed_m1851"), new OneHandedPoseHighRes_m1851()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_m1894"), new TwoHandedPoseHighRes_m1894()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_m1928"), new TwoHandedPoseHighRes_m1928()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_mosin"), new TwoHandedPoseHighRes_mosin()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_ak47"), new TwoHandedPoseHighRes_ak47()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_m60"), new TwoHandedPoseHighRes_m60()));
-        GripType.registerType(new CustomGripType(new ResourceLocation("timelessandclassic", "two_handed_vector"), new TwoHandedPoseHighRes_vector()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "one_handed_m1911"), new OneHandedPoseHighRes_m1911()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "one_handed_m1851"), new OneHandedPoseHighRes_m1851()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_m1894"), new TwoHandedPoseHighRes_m1894()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_m1928"), new TwoHandedPoseHighRes_m1928()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_mosin"), new TwoHandedPoseHighRes_mosin()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_ak47"), new TwoHandedPoseHighRes_ak47()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_m60"), new TwoHandedPoseHighRes_m60()));
+        GripType.registerType(new CustomGripType(new ResourceLocation("timeless_and_classic", "two_handed_vector"), new TwoHandedPoseHighRes_vector()));
 
         HPacket.init();
     }
