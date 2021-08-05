@@ -23,25 +23,25 @@ description='The Timeless and Classic addon introduces a multitude of older weap
 #The fields marked with mandatory need to be present when loading the game
 #They are present in the IDE as we added them to our build.gradle file
 #Something like controllable isn't needed, however, we still add it as the mod supports that and adds features around it.
-[[dependencies.timeless_and_classic]]
+[[dependencies.timelessandclassic]]
     modId="forge"
     mandatory=true
     versionRange="[32,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.timeless_and_classic]]
+[[dependencies.timelessandclassic]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.3,1.16.4,1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.timeless_and_classic]]
+[[dependencies.timelessandclassic]]
     modId="cgm"
     mandatory=true
     versionRange="[1.0.0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.timeless_and_classic]]
+[[dependencies.timelessandclassic]]
     modId="obfuscate"
     mandatory=true
     versionRange="[0.6.0,)"
