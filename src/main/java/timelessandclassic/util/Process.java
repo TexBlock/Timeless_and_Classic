@@ -1,6 +1,6 @@
-package timeless_and_classic.util;
+package timelessandclassic.util;
 
 @FunctionalInterface
 public interface Process<T> {
-    T process(T t);
+	T process(T t);
 }
