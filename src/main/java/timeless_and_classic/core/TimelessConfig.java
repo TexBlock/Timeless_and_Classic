@@ -13,7 +13,7 @@ import org.apache.commons.lang3.tuple.Pair;
 /**
  * Author: Mr.Pineapple (ClumsyAlien, I am currently keeping the file before stashing in a note file, to potentially poke around with later)
  */
-public class Config {
+public class TimelessConfig {
     /*
      * This is an inner class of the config class.
      * This is the common config.
@@ -35,18 +35,16 @@ public class Config {
         public ForgeConfigSpec.IntValue VECTOR45_trigMax;
         public ForgeConfigSpec.IntValue MICROUZI_trigMax;
         public ForgeConfigSpec.IntValue M4_trigMax;
-        //Constructor for the Common Config
+
+        public ForgeConfigSpec.DoubleValue HorizontalRecoil;
+
+
+        //Constructor for the Common TimelessConfig
         Common(ForgeConfigSpec.Builder builder) {
 
             //What we will be pushing to the config, this has a title of common
             builder.push("client");
             {
-                /*
-                 * We can then add a comment (highly recommended) to inform the user what they are changing.
-                 * Notice here that we are connecting it the value from above.
-                 * Then in the case of an integer we need to set the range.
-                 * This takes in the path (what it will be called). The default value. The minimum value. Then the max value.
-                 */
                 this.ammoProgressBar = builder.comment("Show the durabilityBar indicating ammo count per weapon").define("durabilityBar", true);
             }
             //Remember to pop this section
@@ -65,6 +63,8 @@ public class Config {
                 this.MICROUZI_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("microuzi_trigMax", 0, 0, 10);
                 this.M4_trigMax = builder.comment("Maximum level of the Trigger Finger enchantment allowed on a weapon").defineInRange("m4_trigMax", 0, 0, 10);
 
+                this.HorizontalRecoil = builder.comment("The amount of Horizontal Recoil for all weapons (effected by recoil reduction)").defineInRange("horizontal_recoil", 0.4f, 0f, 2f);
+
             }
         }
     }
@@ -75,7 +75,7 @@ public class Config {
      * Then we initialise them.
      */
     static final ForgeConfigSpec commonSpec;
-    public static final Config.Common COMMON;
+    public static final TimelessConfig.Common COMMON;
 
     static {
         final Pair<Common, ForgeConfigSpec> commonSpecPair = new ForgeConfigSpec.Builder().configure(Common::new);

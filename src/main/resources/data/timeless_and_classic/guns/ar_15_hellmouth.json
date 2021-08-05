@@ -4,20 +4,20 @@
     "rate": 2,
     "gripType": "timeless_and_classic:two_handed_ak47",
     "maxAmmo": 20,
-    "reloadAmount": 5,
-    "recoilAngle": 5.385,
-    "recoilKick": 1.655,
-    "recoilAdsReduction": 0.08,
+    "reloadAmount": 4,
+    "recoilAngle": 7.585,
+    "recoilKick": 1.800,
+    "recoilAdsReduction": 0.00,
     "alwaysSpread": true,
-    "spread": 11.25
+    "spread": 16.75
   },
   "projectile": {
     "item": "timeless_and_classic:bullet_308",
     "visible": false,
     "damage": 8,
     "size": 0.2,
-    "speed": 14.5,
-    "life": 70
+    "speed": 20.5,
+    "life": 60
   },
   "sounds": {
     "fire": "timeless_and_classic:item.fire_m16",

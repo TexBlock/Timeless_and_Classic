@@ -1,22 +1,17 @@
 package timeless_and_classic.core.registry;
 
-import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.init.ModEnchantments;
 import com.mrcrayfish.guns.item.AmmoItem;
-import com.mrcrayfish.guns.item.GunItem;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import timeless_and_classic.core.Config;
+import timeless_and_classic.core.TimelessConfig;
 import timeless_and_classic.core.timeless_and_classic;
 import timeless_and_classic.core.types.TimelessGunItem;
 
@@ -113,14 +108,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.M1928_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.M1928_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.M1928_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.M1928_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.M1928_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.M1928_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -140,14 +135,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.AK47_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.AK47_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AK47_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AK47_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AK47_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.AK47_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -162,14 +157,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.M60_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.M60_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.M60_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.M60_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.M60_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.M60_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -218,14 +213,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.DP28_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.DP28_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.DP28_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.DP28_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.DP28_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.DP28_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -240,14 +235,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.M16A1_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.M16A1_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.M16A1_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.M16A1_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.M16A1_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.M16A1_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -274,14 +269,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.AK74_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.AK74_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if(EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AK74_trigMax.get().intValue())
+            else if(EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AK74_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AK74_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.AK74_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -302,14 +297,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.AR15HM_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.AR15HM_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15HM_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AR15HM_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AR15HM_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.AR15HM_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -324,14 +319,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.AR15P_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.AR15P_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AR15P_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AR15P_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.AR15P_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -346,14 +341,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.VECTOR45_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.VECTOR45_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AR15P_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.VECTOR45_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.VECTOR45_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -368,14 +363,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.MICROUZI_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.MICROUZI_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AR15P_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.VECTOR45_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.VECTOR45_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }
@@ -390,14 +385,14 @@ public class ItemRegistry {
         public void inventoryTick(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
         {
             Map<Enchantment, Integer> x =  EnchantmentHelper.deserializeEnchantments(stack.getEnchantmentTagList());
-            if(Config.COMMON.M4_trigMax.get() == 0)
+            if(TimelessConfig.COMMON.M4_trigMax.get() == 0)
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
             }
-            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > Config.COMMON.AR15P_trigMax.get().intValue())
+            else if (EnchantmentHelper.getEnchantmentLevel(ModEnchantments.TRIGGER_FINGER.get(), stack) > TimelessConfig.COMMON.AR15P_trigMax.get().intValue())
             {
                 x.remove(ModEnchantments.TRIGGER_FINGER.get());
-                x.put(ModEnchantments.TRIGGER_FINGER.get(), Config.COMMON.AR15P_trigMax.get().intValue());
+                x.put(ModEnchantments.TRIGGER_FINGER.get(), TimelessConfig.COMMON.AR15P_trigMax.get().intValue());
             }
             EnchantmentHelper.setEnchantments(x, stack);
         }

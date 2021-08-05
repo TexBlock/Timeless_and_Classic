@@ -34,8 +34,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 10.65,
-      "zOffset": -10.6
+      "yOffset": 10.52,
+      "zOffset": -13.6
     },
     "attachments": {
       "barrel": {

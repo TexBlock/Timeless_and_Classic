@@ -1,20 +1,24 @@
 package timeless_and_classic.core;
 
-import com.mrcrayfish.guns.client.KeyBinds;
+import com.mrcrayfish.guns.client.render.gun.IOverrideModel;
 import com.mrcrayfish.guns.client.render.gun.ModelOverrides;
 import com.mrcrayfish.guns.common.GripType;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import timeless_and_classic.client.TimelessKeyBinds;
 import timeless_and_classic.client.handlers.HClient;
 import timeless_and_classic.client.render.gun.model.*;
@@ -22,6 +26,10 @@ import timeless_and_classic.client.render.pose.*;
 import timeless_and_classic.common.CustomGripType;
 import timeless_and_classic.common.network.HPacket;
 import timeless_and_classic.core.registry.*;
+import timeless_and_classic.core.types.TimelessGunItem;
+
+import java.lang.reflect.Field;
+import java.util.Locale;
 
 
 /**
@@ -74,11 +82,14 @@ public class timeless_and_classic {
             return stack;
         }
     };
+
+    private static final Logger LOGGER = LogManager.getLogger();
+
     //What needs to be called the the event bus
     public timeless_and_classic() {
         //Here we add the config to the mod - remember to do this for the server and client if you have them
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.commonSpec);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, TimelessConfig.commonSpec);
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.register(this);
         //Register the Deferred Register from our Registry classes
@@ -110,29 +121,26 @@ public class timeless_and_classic {
     }
 
     void clientSetup(FMLClientSetupEvent event) {
-        ModelOverrides.register(ItemRegistry.M1911.get(), new m1911_animation());
-        ModelOverrides.register(ItemRegistry.M1851.get(), new m1851_animation());
-        ModelOverrides.register(ItemRegistry.M1928.get(), new m1928_animation());
-        ModelOverrides.register(ItemRegistry.MOSIN.get(), new mosin_animation());
-        ModelOverrides.register(ItemRegistry.AK47.get(), new ak47_animation());
-        ModelOverrides.register(ItemRegistry.M60.get(), new m60_animation());
-        ModelOverrides.register(ItemRegistry.M1917.get(), new m1917_animation());
-        ModelOverrides.register(ItemRegistry.GLOCK_17.get(), new glock_17_animation());
-        ModelOverrides.register(ItemRegistry.DP_28.get(), new dp28_animation());
-        ModelOverrides.register(ItemRegistry.M16A1.get(), new m16a1_animation());
-        ModelOverrides.register(ItemRegistry.MK18.get(), new mk18_animation());
-        ModelOverrides.register(ItemRegistry.STI2011.get(), new sti2011_animation());
-        ModelOverrides.register(ItemRegistry.AK74.get(), new ak74_animation());
-        ModelOverrides.register(ItemRegistry.M92FS.get(), new m92fs_animation());
-        ModelOverrides.register(ItemRegistry.AR15_HELLMOUTH.get(), new ar15_hellmouth_animation());
-        ModelOverrides.register(ItemRegistry.AR15_P.get(), new ar15_p_animation());
-        ModelOverrides.register(ItemRegistry.VECTOR45.get(), new vector45_animation());
-        ModelOverrides.register(ItemRegistry.MICRO_UZI.get(), new micro_uzi_animation());
-        ModelOverrides.register(ItemRegistry.M1911_NETHER.get(), new m1911_nether_animation());
-        ModelOverrides.register(ItemRegistry.MOSBERG590.get(), new mosberg590_animation());
-        ModelOverrides.register(ItemRegistry.WALTHER_PPK.get(), new walther_ppk_animation());
-        ModelOverrides.register(ItemRegistry.M4.get(), new m4_animation());
-        ModelOverrides.register(ItemRegistry.M24.get(), new m24_animation());
+        for (Field field : ItemRegistry.class.getDeclaredFields()) {
+            RegistryObject<?> object;
+            try {
+                object = (RegistryObject<?>) field.get(null);
+            } catch (ClassCastException | IllegalAccessException e) {
+                continue;
+            }
+            if (TimelessGunItem.class.isAssignableFrom(object.get().getClass())) {
+                try {
+                    ModelOverrides.register(
+                            (Item) object.get(),
+                            (IOverrideModel) Class.forName("timeless_and_classic.client.render.gun.model." + field.getName().toLowerCase(Locale.ENGLISH) + "_animation").newInstance()
+                    );
+                } catch (ClassNotFoundException e) {
+                    LOGGER.warn("Could not load animations for gun - " + field.getName());
+                } catch (IllegalAccessException | InstantiationException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
         HClient.setup();
         TimelessKeyBinds.register();

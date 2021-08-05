@@ -1,35 +1,25 @@
 package timeless_and_classic.core.types;
 
 import com.mrcrayfish.guns.common.Gun;
-import com.mrcrayfish.guns.common.NetworkGunManager;
 
-import com.mrcrayfish.guns.enchantment.EnchantmentTypes;
 import com.mrcrayfish.guns.item.GunItem;
-import com.mrcrayfish.guns.item.IColored;
 import com.mrcrayfish.guns.util.GunEnchantmentHelper;
 import com.mrcrayfish.guns.util.GunModifierHelper;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
-import java.util.WeakHashMap;
 import javax.annotation.Nullable;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item.Properties;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.util.NonNullList;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.KeybindTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistries;
-import timeless_and_classic.core.Config;
-import timeless_and_classic.core.timeless_and_classic;
+import timeless_and_classic.core.TimelessConfig;
 
 public class TimelessGunItem extends GunItem {
     public TimelessGunItem(Properties properties)
@@ -90,7 +80,7 @@ public class TimelessGunItem extends GunItem {
     @Override
     public boolean showDurabilityBar(ItemStack stack)
     {
-        if (Config.COMMON.ammoProgressBar.get()) {
+        if (TimelessConfig.COMMON.ammoProgressBar.get()) {
             CompoundNBT tagCompound = stack.getOrCreateTag();
             Gun modifiedGun = this.getModifiedGun(stack);
             return !tagCompound.getBoolean("IgnoreAmmo") && tagCompound.getInt("AmmoCount") != GunEnchantmentHelper.getAmmoCapacity(stack, modifiedGun);
