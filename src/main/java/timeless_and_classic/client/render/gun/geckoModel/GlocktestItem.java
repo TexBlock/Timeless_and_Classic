@@ -9,12 +9,13 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 import timeless_and_classic.core.types.TimelessGunItem;
+import timeless_and_classic.util.Process;
 
 public class GlocktestItem extends TimelessGunItem implements IAnimatable
 {
     public AnimationFactory factory = new AnimationFactory(this);
 
-    public GlocktestItem(Properties properties)
+    public GlocktestItem(Process<Properties> properties)
     {
         super(properties);
     }

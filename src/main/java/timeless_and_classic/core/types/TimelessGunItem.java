@@ -20,11 +20,18 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistries;
 import timeless_and_classic.core.TimelessConfig;
+import timeless_and_classic.util.Process;
+
+import static timeless_and_classic.core.timeless_and_classic.GROUP;
 
 public class TimelessGunItem extends GunItem {
-    public TimelessGunItem(Properties properties)
+    public TimelessGunItem(Process<Properties> properties)
     {
-        super(properties);
+        super(properties.process(new Properties().maxStackSize(1).group(GROUP)));
+    }
+
+    public TimelessGunItem() {
+        this(properties -> properties);
     }
 
     @Override
@@ -87,5 +94,10 @@ public class TimelessGunItem extends GunItem {
         }
         else
             return false;
+    }
+
+    @Override
+    public boolean hasEffect(ItemStack stack) {
+        return false;
     }
 }
